@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Catalogue | The Reading Room</title>
+<style>
+:root{--ink:#1d2b3a;--navy:#142d4e;--gold:#c49a4a;--cream:#f7f4ed;--paper:#fffefa;--muted:#657386}
+*{box-sizing:border-box} body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.65}
+header{background:linear-gradient(120deg,#102744,#23496d);color:#fff;padding:30px 7%;border-bottom:5px solid var(--gold)}
+.brand{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:#e8d5a8}
+header h1{font-size:clamp(28px,4vw,43px);margin:8px 0 2px;font-weight:normal}
+header p{margin:0;color:#dbe4ee;font-family:Arial,sans-serif;font-size:14px}
+nav{background:#fff;border-bottom:1px solid #e5dfd2;padding:12px 7%;font-family:Arial,sans-serif}
+nav a{color:var(--navy);text-decoration:none;font-size:13px;font-weight:bold;margin-right:22px}
+nav a:hover{color:#a5792e;text-decoration:underline}
+main{width:min(1080px,88%);margin:38px auto 60px}
+.eyebrow{font:700 11px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#9a762f}
+h2{color:var(--navy);font-weight:normal;font-size:28px;margin:5px 0 18px}
+.intro{max-width:760px;color:#536274}
+.panel{background:var(--paper);border:1px solid #e6dece;border-radius:12px;padding:24px;box-shadow:0 10px 28px #23364a0d}
+table{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid #e6dece}
+th{background:#eae2d2;color:#253b54;text-align:left;font:700 12px Arial,sans-serif;letter-spacing:.7px;text-transform:uppercase}
+th,td{padding:16px 18px;border-bottom:1px solid #e9e3d8}
+tr:last-child td{border-bottom:0} tbody tr:hover{background:#fbf7ef}
+a.booklink{color:#173f68;font-weight:bold;text-decoration:none;border-bottom:1px solid #c49a4a}
+a.booklink:hover{color:#a5792e}
+.detail{display:grid;grid-template-columns:minmax(210px,300px) 1fr;gap:38px;align-items:start}
+.cover-wrap{background:#eee8dc;padding:18px;border-radius:12px;text-align:center;border:1px solid #e2d8c6}
+.cover{width:min(100%,250px);height:360px;object-fit:contain;filter:drop-shadow(0 12px 10px #0002)}
+.cover-note{font:11px Arial,sans-serif;color:var(--muted);margin:10px 0 0}
+.meta{display:grid;grid-template-columns:145px 1fr;margin:22px 0;border-top:1px solid #e8e1d5}
+.meta div{padding:10px 4px;border-bottom:1px solid #e8e1d5}
+.meta .key{font:700 12px Arial,sans-serif;text-transform:uppercase;letter-spacing:.5px;color:#657386}
+.price{font-size:24px;color:#946b27;margin:8px 0}
+.store-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{display:inline-block;padding:12px 19px;border-radius:6px;text-decoration:none;font:700 13px Arial,sans-serif;letter-spacing:.2px}
+.amazon{background:#f0b54a;color:#17283a}.flipkart{background:#2364a5;color:white}
+.back{display:inline-block;margin:0 0 24px;color:#244b70;text-decoration:none;font:700 13px Arial,sans-serif}
+.back:hover{text-decoration:underline}
+.notice{background:#f4eedf;border-left:4px solid var(--gold);padding:13px 16px;color:#5c523e;font:13px Arial,sans-serif;margin-top:20px}
+footer{background:#142d4e;color:#d8e1eb;padding:22px 7%;text-align:center;font:12px Arial,sans-serif}
+@media(max-width:700px){main{width:92%;margin:25px auto 40px}.detail{grid-template-columns:1fr;gap:22px}.cover{height:320px}table{font-size:13px}th,td{padding:11px 9px}.meta{grid-template-columns:120px 1fr}}
+</style>
+</head>
+<body>
+<header><div class="brand">The Reading Room · Book Catalogue</div><h1>Book Catalogue</h1><p>A curated collection of noteworthy books and their authors.</p></header>
+<nav><a href="index.html">HOME</a><a href="index.html#catalogue">BOOK CATALOGUE</a><a href="index.html#about">ABOUT</a></nav>
+
+<main>
+<div class="eyebrow">Welcome to our collection</div>
+<h2>Discover your next great read</h2>
+<p class="intro">Explore a selection of fiction, autobiography and memoir. Select any book title to open its individual information page, where you can view its details and check online-store listings.</p>
+<section id="catalogue">
+<div class="eyebrow">The collection</div><h2>Books at a glance</h2>
+<table>
+<thead><tr><th>No.</th><th>Book Name</th><th>Author</th><th>Listed Price*</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>01</td><td><a class="booklink" href="book1.html">The Alchemist</a></td><td>Paulo Coelho</td><td>₹239</td><td><a class="booklink" href="book1.html">View details →</a></td></tr>
+<tr><td>02</td><td><a class="booklink" href="book2.html">Wings of Fire</a></td><td>A. P. J. Abdul Kalam with Arun Tiwari</td><td>₹148</td><td><a class="booklink" href="book2.html">View details →</a></td></tr>
+<tr><td>03</td><td><a class="booklink" href="book3.html">The Diary of a Young Girl</a></td><td>Anne Frank</td><td>₹120</td><td><a class="booklink" href="book3.html">View details →</a></td></tr>
+<tr><td>04</td><td><a class="booklink" href="book4.html">The Blue Umbrella</a></td><td>Ruskin Bond</td><td>₹99</td><td><a class="booklink" href="book4.html">View details →</a></td></tr>
+</tbody></table>
+<div class="notice">*Prices are indicative sample listings in Indian Rupees (INR), not guaranteed quotations. Prices, editions, delivery charges and stock can change. Use the Amazon or Flipkart links on each book page to check the latest availability.</div>
+</section>
+<section id="about" style="margin-top:42px">
+<div class="eyebrow">About this catalogue</div><h2>A small library of big ideas</h2>
+<div class="panel"><p>This catalogue is designed to make book information easy to browse. Each title has a separate detail page containing its author, publication information, a short description, a cover image and links to online stores.</p><p style="margin-bottom:0">To return to this page from any book, use the <strong>Back to Home</strong> link.</p></div>
+</section>
+</main>
+<footer>THE READING ROOM · BOOK CATALOGUE<br>Designed for educational and demonstration purposes</footer>
+</body></html>
